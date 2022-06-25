@@ -1,0 +1,48 @@
+@import url("./public.css");
+@import url("./component.css");
+#contact section > div > div > div > div span{
+	color: #d6d4d4;
+}
+#contact .icons-box{
+	height: 57px;
+}
+#contact .icon{
+	color: #494444;
+	transition: all 0.3s ease;
+	width: fit-content;
+	height: fit-content;
+	cursor: pointer;
+}
+#contact .icon:hover{
+	padding: 2px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 17px orange;
+    color: orange;
+}
+.form input{
+	height: 50px;
+	background-color: #212121;
+	border-style: none;
+	color: white;
+	position: relative;
+}
+.form textarea{
+	height: 180px;
+	border-radius: 20px;
+	resize: none;
+	background-color: #212121;
+	border-style: none;
+	color: white;
+}
+.form input:focus,.form textarea:focus{
+	outline-style: none !important;
+	background-color: #212121;
+	border-style: none !important;
+	box-shadow: 0 0 0 0.15rem var(--primary-color);
+	color: white;
+}
+.form #btn-submit{
+	width: 20%;
+	min-width: 200px;
+	justify-self: start;
+}
