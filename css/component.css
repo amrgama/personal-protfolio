@@ -3,7 +3,7 @@ nav{
 	width: fit-content;
 	/* animation: fade 0.8s 1 ease-in-out 0.0s; */
 	z-index: 1000;
-	overflow: hidden;
+	overflow-y: hidden;
 	min-height: 100vh;
 }
 nav ul li{
