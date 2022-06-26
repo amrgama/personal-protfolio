@@ -5,7 +5,7 @@ nav{
 	z-index: 1000;
 	overflow: hidden;
 	background-color: red;
-	min-height: 100vh !important;
+	min-height: 100vh;
 }
 nav ul li{
 	width: fit-content;
