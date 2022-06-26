@@ -4,7 +4,6 @@ nav{
 	/* animation: fade 0.8s 1 ease-in-out 0.0s; */
 	z-index: 1000;
 	overflow: hidden;
-	background-color: red;
 	min-height: 100vh;
 }
 nav ul li{
@@ -69,7 +68,6 @@ nav .outer-box{
 	position: relative;
 	margin-bottom: 30px;
 	order: 2;
-	background-color : blue;
 }
 @media (min-width: 768px){
 	nav .outer-box{
