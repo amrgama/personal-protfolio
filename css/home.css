@@ -1,0 +1,61 @@
+@import url("./public.css");
+@import url("./component.css");
+@media (max-width: 992px){
+	section > div{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly !important;
+	}
+}
+section > div .clipbath {
+	height: 100vh;
+	width: 40%;
+	background-color: var(--primary-color) !important;
+	clip-path: polygon(0% 0%, 27% 0, 35% 16%, 64% 100%, 0% 100%);
+}
+@media (max-width: 992px){
+	section > div .clipbath {
+		display: none !important;
+	}
+}
+section > div .my-photo {
+	border-radius: 15px;
+	position: absolute;
+	left: 30px;
+	width: clamp(300px,33%,450px);
+	height: 88vh;
+	box-shadow: 0px 0px 10px #2e2e2e;
+}
+@media (max-width: 992px){
+	section > div .my-photo{
+		width: clamp(200px,44vw,250px);
+		height: clamp(200px,44vw,250px);;
+		position: static !important;
+		box-shadow: 0px 0px 0px 6px #fca910;
+		border-radius: 50% !important;
+	}
+}
+
+main{
+    width: clamp(320px,80vw,600px);
+    overflow: hidden;
+}
+@media (min-width: 500px) and (max-width: 992px){
+	main{
+		align-items: center !important;
+	}
+}
+main span{
+	color: #e5e0e0;
+}
+main p{
+	width: clamp(320px,100%,520px) !important;
+}
+@media (min-width: 500px) and (max-width: 992px){
+	main p{
+		text-align: center;
+	}
+}
+h1 span{
+	color: var(--primary-color);
+}

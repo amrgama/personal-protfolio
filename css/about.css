@@ -1,0 +1,132 @@
+@import url("./public.css");
+@import url("./component.css");
+
+section{
+	margin-bottom: 77px !important;
+}
+section .row > div > div > div > span{
+	word-break: break-word;
+	color: #d6d4d4;
+}
+
+section > .row > div > .box{
+	width: clamp(270px,48%,300px);
+	border: 1px solid rgba(117, 116, 116, 0.219);
+	padding: 20px 30px 20px 20px;
+	box-shadow: 0px 0px 10px #3e373752;
+}
+
+section > .row > div > .box .num{
+	color: var(--primary-color);
+}
+section > .row > div > .box div span{
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	display: inline-block;
+}
+section > .container > span{
+	height: 2px;
+	background-color: #a39c9c29;
+}
+@media (max-width: 410px){
+	section > .container > span{
+		width: 100% !important;
+	}
+}
+@media (max-width: 768px){
+	section > .container > span{
+		width: 75% !important;
+	}
+}
+section > .container > .row > div div.circle{
+	width: 150px;
+	height: 150px;
+}
+section > .container > .row > div div.circle svg{
+	width: 150px;
+	height: 150px;
+}
+section > .container > .row > div  div.circle svg circle{
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke-width: 8px;
+	stroke: rgba(109, 106, 106, 0.521);
+	transform: translate(5px, 5px);
+}
+.row .col:nth-child(1) .circle-box div.circle svg circle:nth-child(2),
+.row .col:nth-child(2) .circle-box div.circle svg circle:nth-child(2){
+	stroke-dasharray: 440px;
+	stroke-dashoffset: 440;
+	stroke-linecap: round;
+	stroke: var(--primary-color);
+	transition: 0.7s;
+}
+.row .col:nth-child(1) .circle-box div.circle svg circle:nth-child(2).scroll-in-circle,
+.row .col:nth-child(2) .circle-box div.circle svg circle:nth-child(2).scroll-in-circle{
+
+	stroke-dashoffset: calc(440 - ((440 * 90) / 100));
+}
+.row .col:nth-child(3) .circle-box div.circle svg circle:nth-child(2),
+.row .col:nth-child(4) .circle-box div.circle svg circle:nth-child(2){
+	stroke-dasharray: 440px;
+	stroke-dashoffset: 440;
+	stroke-linecap: round;
+	stroke: var(--primary-color);
+	transition: 0.7s;
+	position: relative;
+	z-index: 5;
+}
+.row .col:nth-child(3) .circle-box div.circle svg circle:nth-child(2).scroll-in-circle,
+.row .col:nth-child(4) .circle-box div.circle svg circle:nth-child(2).scroll-in-circle{
+	stroke-dashoffset: calc(440 - ((440 * 80) / 100));
+}
+
+section > .container > .row > div > div .skill{
+	width: fit-content;
+	background-color: transparent;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: padding-top 0.5s ,padding-bottom 0.4s 0.1s,transform 0.5s, background-color 0.3s;
+}
+
+section .container div div .history {
+	background-color: #383737;
+}
+section .container div div .icon{
+	height: fit-content;
+}
+section .container div div .icon::before{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 2px;
+	height: 100px;
+	background-color: rgba(163, 158, 158, 0.712);
+	display: inline-block;
+}
+section .container div .col .icon i{
+	color: var(--primary-color);
+}
+section .container div .col div .header h5{
+	margin-bottom: 0px !important;
+	font-size: clamp(1rem,3vw,1.25rem);
+}
+section .container div .col div .header span {
+	font-size: clamp(0.75rem,2vw,1rem) !important;
+}
+section .container div .col div .header h5::before{
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 103%;
+	top: 50%;
+	width: 12px;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+}

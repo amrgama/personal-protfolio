@@ -1,0 +1,32 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+:root{
+	--primary-color : rgb(252, 169, 16);
+}
+body{
+	max-width: 100vw;
+	background: linear-gradient(45deg, #181b1e, #121010);
+	--width: 0%;
+	transition: opacity 0.3s;
+	background-color: black;
+	overflow-x: hidden;
+} 
+section{
+	overflow: hidden !important;
+}
+@media (min-width: 500px){
+	section .container{
+		margin-left: 54px !important;
+		margin-right: 54px !important;
+	}
+}
+
+.visible{
+	visibility: visible !important;
+}
+.p-4{
+	padding: 1.5rem;
+}
