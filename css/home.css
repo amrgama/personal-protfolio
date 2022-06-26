@@ -38,6 +38,7 @@ section > div .my-photo {
 
 main{
     width: clamp(320px,80vw,600px);
+    overflow: hidden;
 }
 @media (min-width: 500px) and (max-width: 992px){
 	main{
