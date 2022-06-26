@@ -101,7 +101,7 @@ nav .outer-box{
 	box-shadow: 0px -28px 0px #383636fa inset, 0px 0px 0px 2px #5c5c5c;
   }
   #switch:checked + .switchbox .pillshap{
-	height: 400px;
+	height: calc(50vh + (264px / 2));
   } 
 
   .outer-box svg{
@@ -135,8 +135,7 @@ nav .outer-box{
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 0.5s,visibility 0.5s,transform 0.5s;
-	transform: translateY(90px); 
-	margin-top: 105px; 
+	transform: translateY(90px);
   }
   .outer-box.checked ~ ul{
 	visibility: visible;
