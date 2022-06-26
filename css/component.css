@@ -5,6 +5,7 @@ nav{
 	z-index: 1000;
 	overflow-y: hidden;
 	min-height: 100vh;
+	display: none;
 }
 nav ul li{
 	width: fit-content;
